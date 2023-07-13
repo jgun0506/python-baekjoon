@@ -1,0 +1,14 @@
+n=int(input())-1
+a=1#분모
+b=1#분자
+c=1#분모에 더함수
+for i in range(n):
+    if a==1:
+        a+=c
+        c+=1
+        b=1
+    else:
+        a-=1
+        b+=1
+print(str(b)+'/'+str(a))
+

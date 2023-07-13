@@ -1,0 +1,15 @@
+n=int(input())
+list=list(map(int,input().split()))
+count=0
+for i in list:
+    prime=True
+    for j in range(2,i):
+        if i%j==0:
+            prime=False
+    if i==1:
+        prime=False
+    if prime==True:
+        count+=1
+print(count)
+'''이방법 말고 소수의 특징생각하기
+소수는 1과 자기자신만 약수로가짐'''
